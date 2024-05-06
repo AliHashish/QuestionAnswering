@@ -96,10 +96,10 @@ config = BertConfig.from_dict({
     "vocab_size": 30522
 })
 
-model = CustomBertForQuestionAnswering(config)
-model.load_state_dict(torch.load('model.pth'), strict=False)
-model_checkpoint = "atharvamundada99/bert-large-question-answering-finetuned-legal"
-tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
+# model = CustomBertForQuestionAnswering(config)
+# model.load_state_dict(torch.load('model.pth'), strict=False)
+# model_checkpoint = "atharvamundada99/bert-large-question-answering-finetuned-legal"
+# tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 
 # x = QA(model, tokenizer, "What is the capital of India?", "India is a country in South Asia. It is the seventh-largest country by land area, the second-most populous country, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia. Delhi is the capital of India.")
 # print(x)
